@@ -5,7 +5,12 @@ import { Button } from "./ui/button";
 const AddToCart = () => {
   return (
     <div>
-      <Button onClick={() => console.log("Clicked")}>Add To Cart</Button>
+      <Button
+        className="bg-white text-black hover:bg-sky-300"
+        onClick={() => console.log("Clicked")}
+      >
+        Add To Cart
+      </Button>
     </div>
   );
 };
