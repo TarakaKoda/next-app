@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        darkHover: "#1F1F1F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

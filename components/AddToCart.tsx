@@ -6,7 +6,7 @@ const AddToCart = () => {
   return (
     <div>
       <Button
-        className="bg-white text-black hover:bg-sky-300"
+        className="btn-dark-1"
         onClick={() => console.log("Clicked")}
       >
         Add To Cart

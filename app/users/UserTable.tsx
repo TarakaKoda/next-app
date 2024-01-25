@@ -35,7 +35,7 @@ const UserTable = async ({ sortOrder }: Props) => {
     <Table className="rounded-lg border border-white">
       <TableCaption>A list of all users.</TableCaption>
       <TableHeader>
-        <TableRow>
+        <TableRow className="hover:bg-[#1F1F1F]">
           <TableHead>
             <Link
               className="text-white hover:text-black"
