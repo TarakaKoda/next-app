@@ -20,16 +20,18 @@ const NavBar = () => {
           </div>
         ) : status === "authenticated" ? (
           <>
-            <div className="flex gap-2">
-              <p>{session.user?.name}</p>
-              {session.user && (
-                <img
-                  className="rounded-full"
-                  src={session.user.image!}
-                  alt="profile picture"
-                />
-              )}
-            </div>
+            {session.user && (
+              <div className="flex gap-2">
+                <p>{session.user.name}</p>
+                {session.user && (
+                  <img
+                    className="rounded-full"
+                    src={session.user.image!}
+                    alt="profile picture"
+                  />
+                )}
+              </div>
+            )}
             <Link href="/api/auth/signout">Sign Out</Link>
           </>
         ) : (
